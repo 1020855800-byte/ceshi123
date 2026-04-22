@@ -3,17 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>首页</title>
+    <title>Me</title>
     <style>
-      :root {
-        color-scheme: light;
-      }
       body {
         margin: 0;
         font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial,
           "PingFang SC", "Microsoft YaHei", sans-serif;
         line-height: 1.6;
-        background: #0b1220;
+        background: #0a0f1c;
         color: #e6edf3;
       }
       .container {
@@ -26,11 +23,10 @@
         background: rgba(255, 255, 255, 0.06);
         border-radius: 16px;
         padding: 22px;
-        backdrop-filter: blur(8px);
       }
       h1 {
         margin: 0 0 10px;
-        font-size: 28px;
+        font-size: 26px;
       }
       .muted {
         color: rgba(230, 237, 243, 0.8);
@@ -54,31 +50,37 @@
       a.btn:hover {
         background: rgba(255, 255, 255, 0.16);
       }
-      code {
-        background: rgba(255, 255, 255, 0.12);
-        padding: 2px 6px;
-        border-radius: 6px;
+      .tag {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.08);
+        margin-right: 8px;
+        margin-top: 8px;
+        font-size: 13px;
       }
     </style>
   </head>
   <body>
     <main class="container">
       <section class="card">
-        <h1>你好，这是首页</h1>
+        <h1>这里是 me.html</h1>
         <p class="muted">
-          我随便写了一点内容：一个简单的卡片布局、按钮、以及一个跳转到
-          <code>me.html</code> 的链接。
+          这是一个简单的“我的页面”示例，你可以在这里放个人简介、设置入口等。
         </p>
-        <ul>
-          <li>页面已包含基础 meta 与自适应视口</li>
-          <li>深色背景 + 简单磨砂卡片风格</li>
-          <li>支持从首页跳到 me 页面</li>
-        </ul>
+
+        <div>
+          <span class="tag">Profile</span>
+          <span class="tag">Settings</span>
+          <span class="tag">About</span>
+        </div>
 
         <div class="row">
-          <a class="btn" href="./me.html">进入 me.html</a>
+          <a class="btn" href="./index.html">返回首页</a>
         </div>
       </section>
     </main>
   </body>
 </html>
+
